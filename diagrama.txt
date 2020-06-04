@@ -1,17 +1,17 @@
 @startuml
 interface Modificacion{
-+aplicarCambio()
++aplicarCambio(guardarropa)
 +opuesto()
 }
 class AgregarPrenda{
 -Prenda prendaAAgregar
-+aplicarCambio()
++aplicarCambio(guardarropa)
 +opuesto()
 
 }
 class SacarPrenda{
 -Prenda prendaARemover
-+aplicarCambio()
++aplicarCambio(guardarropa)
 +opuesto()
 }
 class Guardarropa{
@@ -33,4 +33,5 @@ SacarPrenda --> Prenda
 Guardarropa --> "*" Prenda
 Guardarropa --> "*" Modificacion
 Guardarropa --> "*" Modificacion
+Modificacion ..> Guardarropa
 @enduml
