@@ -1,5 +1,5 @@
 # qmp5
-![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/ivojawer/qmp5/master/diagrama.txt)
+![diagrama](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/ivojawer/qmp5/master/diagrama.txt)
 
 
 ### Guardarropas compartidos
@@ -12,7 +12,7 @@ crearGuardarropaCompartido(descripcion, otrosUsuarios){
 ```
 o algo por el estilo.
 
-
+### Sugerencias
 Sobre los cambios/sugerencias, fui por el lado de tener objetos inmutables por todos sus beneficios. Para deshacerlos cada uno produce un cambio opuesto.
 Por ejemplo, 
 En AgregarPrenda:
