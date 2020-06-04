@@ -1,0 +1,36 @@
+@startuml
+interface Modificacion{
++aplicarCambio()
++opuesto()
+}
+class AgregarPrenda{
+-Prenda prendaAAgregar
++aplicarCambio()
++opuesto()
+
+}
+class SacarPrenda{
+-Prenda prendaARemover
++aplicarCambio()
++opuesto()
+}
+class Guardarropa{
+-String descripcion
+-List<Prenda> prendas
+-List<Modificacion> sugerenciasAceptadas
+-List<Modificacion> sugerencias
++aceptar(sugerencia)
++rechazar(sugerencia)
++deshacerSugerencia(sugerencia)
++sacarPrenda(nuevaPrenda)
++agregarPrenda(nuevaPrenda)
+}
+
+Modificacion <|..AgregarPrenda
+Modificacion <|..SacarPrenda
+AgregarPrenda --> Prenda
+SacarPrenda --> Prenda
+Guardarropa --> "*" Prenda
+Guardarropa --> "*" Modificacion
+Guardarropa --> "*" Modificacion
+@enduml
